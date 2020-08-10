@@ -31,4 +31,4 @@ UNICODE_ENABLE = yes	# Allow output of unicode code points directly
 HD44780_ENABLE = no 	# LCD character display functionality
 # TAP_DANCE_ENABLE = yes	# Multi-tap keys for alternate keycodes
 
-LAYOUTS = iso_enter_split_bs_split_rshift
+LAYOUTS = 60_iso_split_bs_split_rshift

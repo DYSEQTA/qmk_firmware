@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │LCTL│LALT│ FN │         SPACE          │ FN │RALT│RCTL│LGUI│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
-  [BASE] = LAYOUT_iso_enter_split_bs_split_rshift(
+  [BASE] = LAYOUT_60_iso_split_bs_split_rshift(
     KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, KC_DEL,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC,
     KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_BSLS, KC_ENT,
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │LCTL│LALT│ FN │         SPACE          │ FN │RALT│RCTL│FN 2│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
-  [PAD] = LAYOUT_iso_enter_split_bs_split_rshift(
+  [PAD] = LAYOUT_60_iso_split_bs_split_rshift(
     KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, KC_DEL,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC,
     KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_BSLS, KC_ENT,
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │LCTL│LALT│ FN │                        │ FN │RALT│RCTL│FN 2│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
-  [FUN_NAV] = LAYOUT_iso_enter_split_bs_split_rshift(
+  [FUN_NAV] = LAYOUT_60_iso_split_bs_split_rshift(
     KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_LEFT, KC_RIGHT,
     XXXXXXX, KC_HOME, KC_UP, KC_END, KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
     XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDN, XXXXXXX, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
