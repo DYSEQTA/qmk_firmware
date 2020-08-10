@@ -1,5 +1,4 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
 
 #include "config_common.h"
 
@@ -26,23 +25,24 @@
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+/* RGB Congfig */
 #define RGB_DI_PIN E2
 #ifdef RGB_DI_PIN
-#define RGBLIGHT_EFFECT_KNIGHT
 #define RGBLED_NUM 16
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_SLEEP
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_MAX_LAYERS 1
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
 
 /* Bootmagic Lite - Hold ESC when plugging in cable to enter DFU bootloader */
 #define BOOTMAGIC_LITE_ROW 0
 #define BOOTMAGIC_LITE_COLUMN 0
 
-#endif
-#endif
+/* Disable Unnecessary Features */
+#define NO_DEBUG
+#define NO_PRINT
+#define NO_ACTION_TAPPING
+#define NO_ACTION_ONESHOT
