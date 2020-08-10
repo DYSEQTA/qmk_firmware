@@ -2,7 +2,7 @@
 
 enum layer_names {
   BASE,
-  PAD,
+  FUN_PAD,
   FUN_NAV,
 };
 
@@ -37,10 +37,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴┬───┤
  * │ SHIFT  │ Z │ X │ C │ V │ B │ N │ M │ < │P .│ ? │ SHFT │ ~ │
  * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬┴───┤
- * │LCTL│LALT│ FN │         SPACE          │ FN │RALT│RCTL│FN 2│
+ * │LCTL│LALT│ FN │         SPACE          │ FN │RALT│RCTL│FN P│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
-  [PAD] = LAYOUT_60_iso_split_bs_split_rshift(
+  [FUN_PAD] = LAYOUT_60_iso_split_bs_split_rshift(
     KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC, KC_DEL,
     KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC,
     KC_CAPS, KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_BSLS, KC_ENT,
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴┬───┤
  * │ SHIFT  │   │   │   │   │RGB│   │   │   │   │   │ SHFT │ESC│
  * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬┴───┤
- * │LCTL│LALT│ FN │                        │ FN │RALT│RCTL│FN 2│
+ * │LCTL│LALT│ FN │                        │ FN │RALT│RCTL│FN P│
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
 */
   [FUN_NAV] = LAYOUT_60_iso_split_bs_split_rshift(
